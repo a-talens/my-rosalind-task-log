@@ -30,3 +30,11 @@ for name in names:
 n = 10
 for i in range(n):
   print (i)
+# output is 1/ 2/ 3/ 4/ 5/ 6/ 7/ 8/ 9
+# range() lists integers between 0 and n
+print (range(5, 12))
+# guess: output is 0/1/2/3/4, 0/1/2/3/4/5/6/7/8/9/10/11/12
+# output is range(5,12)
+for p in range(5,12):
+  print (p)
+# output is 5/6/7/8/9/10/11 :)
