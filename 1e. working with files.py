@@ -42,12 +42,18 @@
 
 # open rosalind 5 file, assign variable(f) to open file
 # f = open('rosalind_ini5', 'r')
-f = open('/Users/giel/Desktop/rosalind task logs/rosalind-task-log/rosalind_ini5')
-# read all rosalind 5 lines
-f.readlines(n)
-# set fxn to be carried out on every line
-for line in f:
-   # separate line into string that separates each line
-   f_sl = f.splitlines()
-   if f_sl(n) % 2 == 1:
-    print (f_sl)
+f = open('/Users/giel/Downloads/rosalind_ini5.txt', 'r')
+# print every line
+lines = f.readlines()
+print (lines)
+# make lines into a string so you can separate the lines using .split()/ .splitlines()
+sep_lines = str(lines)
+# use .split() on the string to get rid of end '\\n'
+sep_lines_clean = sep_lines.split('\\n')
+# string slice to set how items are returned: ::2 for every 2nd item
+# s[start:stop:end], so s[::2] = return every other item
+print (sep_lines_clean[::2])
+
+# save file
+f = open('output.txt', 'w')
+f = sep_lines_clean[::2]
