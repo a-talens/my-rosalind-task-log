@@ -38,3 +38,27 @@ print (range(5, 12))
 for p in range(5,12):
   print (p)
 # output is 5/6/7/8/9/10/11 :)
+
+# task
+# given: two +Ve integers a and b (a<b<10000)
+# return: sum of all odd integers from a thru b, inclusively
+a = 4860
+b = 9669
+# acts as starting point to add numbers that meet if condition
+start = 0
+# to carry out a fxn on each number in list
+for number in range(a, b+1):
+  # set condition for fxn
+  if number % 2 == 1:
+    # this prints all odd numbers in range
+    # print(number)
+    # to get sum of all odd numbers: += adds number to variable
+    start += number
+  print (start) 
+# end output is total  of all odd numbers in range (17472325)
+
+27/8/24
+
+
+
+
